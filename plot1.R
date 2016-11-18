@@ -1,4 +1,4 @@
-elec<- read.csv("~/Documents/R/Semaine 1/Devoir/household_power_consumption.txt", header=T, sep=";")
+elec<- read.csv("household_power_consumption.txt", header=T, sep=";")
 
 
 elec$Date <- as.Date(elec$Date, format='%d/%m/%Y')
