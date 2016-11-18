@@ -1,5 +1,5 @@
 
-elec<- read.csv("~/Documents/R/Semaine 1/Devoir/household_power_consumption.txt", header=T, sep=";")
+elec<- read.csv("household_power_consumption.txt", header=T, sep=";")
 elec$Date <- as.Date(elec$Date, format="%d/%m/%Y")
 elec2007 <- elec[(elec$Date=="2007-02-01") | (elec$Date=="2007-02-02"),]
 
